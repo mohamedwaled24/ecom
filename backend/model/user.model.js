@@ -31,7 +31,19 @@ const userSchema =new mongoose.Schema({
         type:String,
         enum:['Customer','Admin'],
         default:'Customer'
-    }
+    },
+    isVerified:{
+        type:Boolean,
+        default:false
+    },
+    lastLogin:{
+        type:Date,
+        defualt:Date.now
+    },
+    resetPasswordToken:String,
+    resetPasswordTokenExpiresAt:Date,
+    verificationToken:String,
+    verificationTokenExpiresAt:Date
 } , {
     timestamps:true
 })
