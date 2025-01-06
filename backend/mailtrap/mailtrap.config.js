@@ -5,7 +5,7 @@ import  { MailtrapClient } from "mailtrap";
 
 
 
-const TOKEN ="b15ea0ecfb035e078587faa94c7bd3db";
+const TOKEN =MAILTRAP_TOKEN;
 
 
 
